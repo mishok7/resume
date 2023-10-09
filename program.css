@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    background:#F0F8FF;
+}
+
+h1 {
+	width: 400px;
+	margin-top: 0;
+}
+
+.inln {
+	display: flex;
+}
+
+.inln1 {
+	margin-left: 50px;
+}
+
+
+.info {
+	margin-bottom: 20px;
+
+}
+
+.info-text{
+	font-style: italic;
+	color: #778899;
+	margin-bottom: 0;
+	font-size: 19px;
+}
+
+.info-href {
+	font-size: 18px;
+}
+
+.header {
+	margin-bottom: 30px;
+	color: #333333;
+
+	
+}
+
+.card {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+   
+    
+}
+
+.hobby{
+    border-color:#FFE4E1 ;
+    background: #FFE4E1 ;
+}
+
+.work{
+	border-color:#e5ffe7;
+    background:#e5ffe7 ;
+}
+
+.nav{
+	border-color:#8FBC8F;
+	background:#8FBC8F ;
+}
+
+.img {
+	width: 200px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25) ;
+}
+ 
+
+
+.container {
+	padding-top: 15px;
+	max-width: 750px;
+	margin: auto;
+	
+}
+
+
+
+
+#email, #name{
+	width: 355px;
+	height: 30px;
+	border-radius: 20px;
+
+}
+
+#message{
+	width: 730px;
+	height: 125px;
+	border-radius: 10px;
+}
+
+.ahr {
+	color: #708090;
+    text-decoration: none;
+	border-bottom: 2px solid;
+	cursor: pointer;
+}
+
+.ahr:hover /*наведение курсора*/{
+color:black;
+background: whitesmoke;
+padding: 7px;
+border-radius: 10px;
+}
+.ahr:active /*зажатие ссылки*/ {
+	
+	padding: 5px;
+	border-radius: 8px;
+	transition: all .4s;
+}
+.ahr:visited /*ссылка после посещения*/{
+	color: purple;
+}
+
+
+
+
+.btn {
+	background: black;
+	padding:10px 20px;
+	color: white;
+	
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+	margin-top: 10px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.list {
+	padding: 0 20px;
+}
+
+.list li {
+	color: #778899;
+	margin-bottom: 10px;
+}
+
+
+
+.table {
+	width: 100%;
+}
+
+.table td {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+
+
+.table td:nth-child(2), /*Выбор и изменение 2 и 3 столбца в таблице*/
+.table td:nth-child(3) {
+    color: #778899;
+}
+
+.table td:hover {
+	color: whitesmoke;
+	font-weight: bolder;
+	transition: all .3s; }
+
+.form {
+	text-align: center;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row .form-input{
+    display: inline-block;
+}
+
+
+.form-input label{
+	display: block;
+    color: #86898f;
+}
+
+.form-input input,
+.form-input textarea {
+	border: 1px solid #778899;
+	background: transparent;
+	outline: none;
+	color: #000;
+	font-family: inherit;
+	padding: 8px 0 8px 5px;
+}
+
+@media (max-width: 600px) {
+	.inln {
+		display:block ;
+		text-align: center;
+	}
+
+    .inln1 {
+    	margin-left: 0; 
+    }
+
+    h1{
+    	margin: auto;
+    }
+}
+    
+@media (max-width: 765px) {
+	.form-row .form-input{
+    display: block;
+ }
+    
+    #email, #name, #message {
+    	width: 97%;
+    }
+
+}

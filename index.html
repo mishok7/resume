@@ -2,97 +2,88 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="keywords" content="Резюме, Булатов, Михаил">
 	<meta name="description" content="Резюме перспективного frontend разработчика">
     <title>Резюме</title>
+    <link rel="stylesheet" type="text/css" href="program.css">
 </head>
 <body>
-    <img src="ava.jpg" alt="Михаил Булатов" width="200px">
-
-
-	<h1>Михаил Булатов</h1>
-	<p>Я люблю бегать, <strong>ходить в спортзал</strong></p>
-	<p>А также <em>самосовершенствоваться</em>, учиться и не тратить время зря</p>
-	<br>
+<div class="container">
+<div class="inln">
+   <div>
+     <img src="ava.jpg" alt="Михаил Булатов" max-width="200px" class="img">
+   </div>
+   <div class="inln1">
+   <h1>Михаил Булатов</h1>
+  <div class="info-text">
+	    <p style="margin-bottom: auto;">Я люблю плавание, <strong>спортзал</strong></p>
+	    <p style="margin-top: auto;">а также <em>читать, узнавать что-то новое и развиваться</em></p>
+  </div>
+  <div class="info-href">
 	<p><strong>Список моих социальных сетей:</strong></p>
-	
-
-	<a href="https://vk.com/mishabulatov7" target="_blank">ВКонтакте</a>
+	<a href="https://vk.com/mishabulatov7" target="_blank" class="ahr">ВКонтакте</a>
 	|
-	<a href="https://web.telegram.org/a/#903156446" target="_blank">Телеграмм</a>
-    
-
+	<a href="https://web.telegram.org/a/#903156446" target="_blank" class="ahr">Телеграмм</a>
+  </div>
+</div>
+</div>
+    <br>
+  <div class="card hobby">
+      <h3>Мои хобби: </h3>
+        <ol class="list">
+    	  <li>Качалка</li>
+    	  <li>Чтение</li>
+    	  <li>Плавание</li>
+        </ol>
+  </div>    
     <br>
     
-
-    <h3>Мои хобби: </h3>
-      <ol>
-    	<li>Качалка</li>
-    	<li>Путешествия</li>
-    	<li>Бег</li>
-      </ol>
-    
-
-    <br>
-    
-
+  <div class="card work">
     <h3>Опыт работы</h3>
-    <table width="250px">
-      <thead>
-    	  <tr>
-    		<th>Название</th>
-    		<th>Должность</th>
-    		<th>Год</th>
-    	  </tr>
-      </thead>
+    <table class="table">
       <tbody>
     	  <tr>
-    	  	<td>Стройка</td>
-    	  	<td>Бедолага</td>
+    	  	<td>Стройка(Матвей)</td>
+    	  	<td>Разнораб</td>
     	  	<td>2021</td>
     	  </tr>
     	  <tr>
-    	  	<td>Стройка</td>
-    	  	<td>Ответственный</td>
+    	  	<td>Стройка(Иван)</td>
+    	  	<td>Разнораб</td>
+    	  	<td>2022</td>
+    	  </tr>
+    	  <tr>
+    	  	<td>Стройка(Артем)</td>
+    	  	<td>Разнораб/Старший</td>
     	  	<td>2023</td>
     	  </tr>
       </tbody>
     </table>
-
-
+  </div> 
     <br>
-
-
-    <h2>Связаться со мной</h2>
-      <form action="/">
-        <div>
-        	<label for="name">Ваше имя: <label>
-        		<br>
-        	<input type="text" id="name" placeholder="Введите имя">
-        </div>
- 
-        <div>
-        	<label for="email">Ваша почта: </label>
-        	<br>
-        	<input type="email" id="email" placeholder="Введите почту">
-        </div>
-             
-        <div>
-        	<label for="message">Ваше сообщение:</label>
-        	<br>
-        	<textarea id="message" placeholder="Введите сообщение..."></textarea>
-        </div>
-
-        <input type="submit" value="Отправить!">
-
-      </form>	
-
-
-
-
-
-
-
+  
+     <h2 class="form">Связаться со мной</h2>
+        <form action="/">
+          <div class="input">
+        	  <div class="form-row">  
+        	    <div class="form-input">    
+        	        <label for="name" >Ваше имя: <label> 
+        	        <input type="text" id="name" placeholder="Введите имя" style="padding-left:15px">
+        	    </div>    
+                <div class="form-input">
+        	        <label for="email">Ваша почта: </label> 
+        	        <input type="email" id="email" placeholder="Введите почту" style="padding-left:15px" >
+                 </div>
+             </div>
+                <div class="form-input">
+        	        <label for="message" >Ваше сообщение:</label> 
+        	        <textarea id="message" placeholder="Введите сообщение..." style="padding-left:15px"></textarea>
+                </div>
+                    <input type="submit" value="Отправить!" class="btn">
+          </div>
+        </form>	
+  </div>
+</div>
 </body>
 </html>
